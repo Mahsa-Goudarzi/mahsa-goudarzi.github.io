@@ -1,0 +1,184 @@
+:root {
+  --color-primary: #656cec;
+  --color-secondary: rgba(229, 234, 252, 0.712);
+  --background-color: #f7f8fcbd;
+  --font-color-primary: #293b5f;
+  --font-color-secondary: #47597e;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--background-color);
+  font-family: var(--default-font-family);
+  color: var(--font-color-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--font-color-primary);
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.5;
+}
+
+.hero p {
+  font-size: 36px;
+  color: var(--font-color-primary);
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+.content h3 {
+  font-family: var(--default-font-family);
+}
+.content p {
+  font-size: 14px;
+}
+
+footer {
+  margin: 60px;
+}
+
+footer .contact-btn {
+  margin-top: 20px;
+}
+
+footer .contact-box {
+  background: var(--color-secondary);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box h3 {
+  font-size: 48px;
+}
+
+footer .email-link {
+  font-size: 24px;
+  text-decoration: none;
+  color: #293b5f;
+}
+
+footer .email-link:hover {
+  color: var(--color-primary);
+}
+
+footer .social-links a,
+footer .social-links a:hover {
+  font-size: 18px;
+  color: var(--color-primary);
+  padding: 10px 14px;
+  margin: 0 15px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--background-color);
+  background: var(--color-primary);
+}
+
+.logo {
+  max-height: 25px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--color-secondary);
+}
+
+.contact-btn,
+.contact-btn:hover {
+  color: white;
+  font-size: 16px;
+  line-height: 25px;
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  background-color: var(--color-primary);
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+.launch-btn {
+  color: var(--color-primary);
+  font-size: 16px;
+  line-height: 25px;
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+}
+
+.launch-btn:hover {
+  color: white;
+  background: var(--color-primary);
+}
+
+.content-container {
+  padding: 60px 20px;
+}
+
+.skill {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 44px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  footer .contact-btn {
+    margin-top: 0;
+  }
+
+  footer .contact-box h3 {
+    font-size: 26px;
+  }
+
+  footer .email-link {
+    font-size: 18px;
+  }
+
+  .project-description {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .content {
+    text-align: center;
+  }
+}
